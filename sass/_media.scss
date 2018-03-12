@@ -1,0 +1,306 @@
+/* Адаптив для сайта */
+
+@media only screen and  (max-width: 1600px){
+
+	html, body{
+		font-size: 9px;
+	}
+
+	.menu{
+		a{
+			font-size: 3rem;
+		}
+	}
+
+	.header-btns{
+		a{
+			font-size: 3rem;
+		}
+	}
+
+	.gallery-item {
+	    height: 30rem;
+	}
+
+}
+
+@media only screen and  (max-width: 1330px){
+
+	html, body{
+		font-size: 8px;
+	}
+} 
+
+@media only screen and  (max-width: 1200px){
+
+	html, body{
+		font-size: 7.5px;
+	}
+
+	.menu{
+		padding-top: 2rem;
+		a{
+			&::after{
+				height: 2px;
+				transform: translateY(-4.9rem) scale(0);
+			}
+		&:hover{
+			&::after{
+				transform: translateY(-4.9rem) scale(1);
+				}
+			}
+		}	
+	}
+
+	.navigation{
+		a{
+			font-size: 2.5rem;	
+		}
+	}
+
+	.header-btns{
+		width: 14%;
+		padding: 2rem 0 1rem 2%;
+	}
+
+	.abot-widget-content li {
+	    margin-bottom: 1.5rem;
+	}
+
+	.gallery-item {
+	    height: 27rem;
+	} 
+
+	.patreon-icon{
+		margin-left: 1rem;
+	}
+
+	.form{
+		width: 100%;
+	}
+}
+
+@media only screen and  (max-width: 991px){
+
+	html, body{
+		font-size: 6.7px;
+	}
+
+	.menu{
+		padding-top: 2.5rem;	
+	}
+
+	.header-btns{
+		padding-top: 2.5rem;
+	}
+	
+	.navigation{
+		a{
+			font-size: 2rem;	
+		}
+	}
+
+	.footer{
+		font-size: 1.8rem;
+	}
+
+	.widget-title{
+		font-size: 2rem;
+	}
+	.social-head-icon{
+		width: 100%;
+	}
+	/* .gallery-item {
+	    height: 23rem;
+	} */
+}
+
+@media only screen and  (max-width: 767px){
+
+	html, body{
+		font-size: 5.7px;
+	}
+
+	.nav{
+		background: #524f6a;
+		a{
+			font-size: 3.5rem;
+		}
+	}
+
+	.logo{
+		width: 30%;
+	}
+
+	.header-btns{
+		width: 30%;
+		padding: 2rem 7% 1rem 7%;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	.slick-dots {
+	    li {
+	        button {
+	            height: 20px;
+	            width: 20px;
+	            &:before {
+	                top: 6px;
+	                left: 6px;
+	                width: 8px;
+	                height: 8px;
+	            }
+	        }
+	    }
+	}
+
+	.mob-menu-link{
+		display: block;
+	}
+	
+	.mob-menu-link{
+		padding-top: 2rem;
+		width: 40%;
+	}
+
+	.gallery-item {
+	    height: 40rem;
+	} 
+
+	.widget{
+		margin-bottom: 4rem;
+	}
+
+	.patreon-icon{
+		margin-left: 8rem;
+	}
+
+	.form {
+	    margin-right: 0;
+	}
+	
+
+}
+
+
+@media (max-width:574px){
+
+	.widget {
+	    margin: 2rem 0;
+	    padding-bottom: 3rem;
+	    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	}
+
+	.widget {
+	    width: 100%;
+	}
+
+	.fa-search-plus{
+		margin-top: 20%;
+	}
+
+	.gallery-item{
+		&:hover{
+			.fa-search-plus{
+				margin-top: 17%;
+			}
+		}
+	}
+}
+
+@media (max-width:480px){
+
+	.logo{
+		width: 50%;
+		padding-bottom: 1rem;
+	}
+
+	.nav{
+		a{
+			font-size: 3rem;
+		}
+	}
+
+	.burger-link{
+		span, span:before, span:after{
+			margin-top: -4px;
+			left: 72%;
+			margin-left: -10px;
+		}
+		span:before{
+			margin-top: -5px;
+		}
+		span:after{
+			margin-top: 5px;
+		}
+	}
+
+	.burger-link-active{
+		span{
+			margin-top: -4px;
+			background: transparent;
+			&:before{
+				transform: rotate(45deg);
+				margin-top: 0;
+			}
+			&:after{
+				transform: rotate(-45deg);
+				margin-top: 0;
+			}
+		}
+	}
+
+	.fa-search-plus{
+		margin-top: 25%;
+	}
+
+	.gallery-item{
+		&:hover{
+			.fa-search-plus{
+				margin-top: 20%;
+			}
+		}
+	}
+
+	.widget-title {
+	   font-size: 3rem;
+	}
+	.mob-menu-link{
+		padding-left: 12%;
+	}
+	.header-btns {
+	    display: none;
+	}
+	.footer{
+		padding-top: 2rem;
+	}
+
+}
+
+@media (max-width:380px){
+	.blog-slider {
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	.blog{
+		padding-right: 0;
+	}
+
+	.fa-search-plus{
+		margin-top: 50%;
+	}
+
+	.gallery-item{
+		&:hover{
+			.fa-search-plus{
+				margin-top: 35%;
+			}
+		}
+	}
+
+	.footer {
+	    padding: 3.7rem 0 2rem 0;
+	}
+}
